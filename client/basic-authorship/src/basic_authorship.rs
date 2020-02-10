@@ -307,7 +307,7 @@ mod tests {
 	fn should_cease_building_block_when_deadline_is_reached() {
 		// given
 		let client = Arc::new(substrate_test_runtime_client::new());
-		let (txpool, _) = = Arc::new(
+		let (txpool, _) = Arc::new(
 			BasicPool::new(Default::default(), Arc::new(FullChainApi::new(client.clone())))
 		);
 
